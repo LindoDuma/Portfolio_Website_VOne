@@ -8,29 +8,107 @@
         <link rel="stylesheet" type="text/css" href="Css/index.css" />
     </head>
     <body>
-        <nav class="bg-transparent">
-            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-16 items-center justify-between">
-                        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                            <ul class="flex space-x-4">
-                                <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all">Home</a></li>
-                                <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all">Projects</a></li>
-                                <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all">Skills</a></li>
-                                <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all">Hobbies</a></li>
-                            </ul>
-                        </div>
+        <header id="header">
+            <!--Navigation Bar-->
+            <nav class="bg-transparent">
+                <div class="mx-auto px-2 sm:px-6 lg:px-8">
+                    <div class="relative flex h-16 items-center justify-between">
+                            <div class="flex flex-1 sm:items-stretch md:items-center justify-between ">
+                                <div><h1 class="text-md font-bold font-sans uppercase">Lindokuhle Duma</Lindokuhle></h1></div>
+                                <ul class="flex flex-row md:flex sm:hidden md:flex-row space-x-4 justify-self-center">
+                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#home">Home</a></li>
+                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#projects">Projects</a></li>
+                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#skills">Skills</a></li>
+                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!--Hero Section-->
+            <div class="container flex flex-col-reverse md:flex-row items-center h-auto my-28 mx-auto">
+                <!--LeftSide-->
+                <div class="flex flex-col w-1/2">
+                    <h1 class="text-5xl font-bold mb-3 justify-self-center ">Hello, my name is Lindokuhle</h1>
+                    <h2 class="text-6xl justify-self-center">I am a Software Engineer</h2>
+                    <div class="flex justify-self-end flex-col md:flex-row mt-auto">
+                        <a target="_blank" href="https://github.com"> Github</a>
+                    </div>
+                </div>
+                <!--RightSide-->
+                <div class="flex flex-col w-1/2">
+                    <img class="" src="Images/LindoR.png" width="700px" height="700px" alt="">
                 </div>
             </div>
-        </nav>
+        </header>
 
-        <div class="container flex justify-center align-middle items-center h-auto my-2 mx-auto">
-            <div class="flex flex-col w-1/2">
-                <h1 class="text-3xl font-bold">Hi my name is Lindokuhle</h1>
-                <h2 class="text-4xl">I am a Fullstack developer</h2>
+        <!--Skills-->
+        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="skills">
+            <div class="flex flex-col w-full justify-center items-center">
+                <h1 class="text-5xl font-bold mb-20">Skills</h1>
             </div>
-            <div class="flex flex-col w-1/2">
-                <img class="" src="Images/LindoR.png" width="600px" height="600px" alt="">
+            <div class="flex justify-center w-full flex-col md:flex-row gap-9">
+                <div class="flex flex-col w-1/2 p-5">
+                    <h1 class="text-4xl font-normal mb-3">Languages</h1>
+                    <div class="flex flex-col">
+                        <h1>C#</h1>
+                        <h1>HTML</h1>
+                        <h1>CSS</h1>
+                        <h1>Java</h1>
+                        <h1>Javascript</h1>
+                    </div>
+                </div>
+
+                <div class="flex flex-col w-1/2 p-5">
+                    <h1 class="text-4xl font-normal mb-3">Frameworks and tools</h1>
+                    <div class="flex flex-col">
+                        <h1>ASP.NET MVC</h1>
+                        <h1>ASP.NET Core</h1>
+                        <h1>Github</h1>
+                        <h1>Visual Studio</h1>
+                        <h1>Visual Studio Code</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="projects">
+            <div class="flex flex-col w-full justify-center items-center">
+                <h1 class="text-5xl font-bold mb-20">Projects</h1>
+            </div>
+            <div class="flex justify-center w-full flex-col md:flex-row gap-9">
+                <div class="flex flex-col w-full p-5">
+                    <h1 class="text-3xl font-normal mb-3">BSLP Web App</h1>
+                    <h1 class="text-2xl font-normal mb-3"> Built with:</h1>
+                    <div class="flex flex-col">
+                        <p>ASP.NET MCV 5</p>
+                        <p>Bootstrap 5</p>
+                        <p>CSS</p>
+                        <p>Razor</p>
+                        <p>Javascript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="contact">
+            <div class="flex flex-col w-full justify-center items-center">
+                <h1 class="text-5xl font-bold mb-20">Contact Me</h1>
+            </div>
+            <div class="flex justify-center w-full flex-col md:flex-row gap-9">
+                <div class="flex flex-col w-full p-5">
+                    <p class="text font-normal mb-3">Tel: 0727500762</p>
+                    <p class="text font-normal mb-3">Email: lindoduma10@gmail.com</p>
+                </div>
             </div>
         </div>
     </body>
+    <footer>
+        <div class="w-full flex flex-row justify-center items-center">
+            <p class="text-sm py-3">@2024 Made by Lindokuhle Duma</p>
+        </div>
+    </footer>
 </html>
