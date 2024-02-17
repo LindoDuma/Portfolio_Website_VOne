@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
     <head>
-        <title>My Portfolio</title>
+        <title>Lindokuhle | Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" type="text/css" href="Css/index.css" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header id="header">
@@ -14,12 +23,12 @@
                 <div class="mx-auto px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
                             <div class="flex flex-1 sm:items-stretch md:items-center justify-between ">
-                                <div><h1 class="text-md font-bold font-sans uppercase">Lindokuhle Duma</Lindokuhle></h1></div>
-                                <ul class="flex flex-row md:flex sm:hidden md:flex-row space-x-4 justify-self-center">
-                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#home">Home</a></li>
-                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#projects">Projects</a></li>
-                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#skills">Skills</a></li>
-                                    <li><a class="text-gray-900 hover:bg-gray-300 hover:text-black rounded-full px-3 py-2 text-sm font-medium transition-all uppercase" href="#contact">Contact</a></li>
+                                <div><h1 class="text-md font-bold font-sans uppercase  hover:text-blue-600 rounded-full px-3 py-2 text-sm transition-all duration-500 ease-in-out">Lindokuhle.Dev</Lindokuhle></h1></div>
+                                <ul id="navlist" class="hidden md:flex flex-col sm:hidden md:flex-row space-x-10 justify-self-center">
+                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#home">Home</a></li>
+                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#projects">Projects</a></li>
+                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#skills">Skills</a></li>
+                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                     </div>
@@ -30,15 +39,16 @@
             <div class="container flex flex-col-reverse md:flex-row items-center h-auto my-28 mx-auto">
                 <!--LeftSide-->
                 <div class="flex flex-col w-1/2">
-                    <h1 class="text-5xl font-bold mb-3 justify-self-center ">Hello, my name is Lindokuhle</h1>
-                    <h2 class="text-6xl justify-self-center">I am a Software Engineer</h2>
-                    <div class="flex justify-self-end flex-col md:flex-row mt-auto">
-                        <a target="_blank" href="https://github.com"> Github</a>
+                    <h1 class="text-5xl text-blue-600 font-bold mb-3 font-NotoSans">Hello, my name is Lindokuhle</h1>
+                    <h2 class="text-6xl ">I am a Software Engineer</h2>
+                    <div class="flex flex-col md:flex-col mt-auto align-bottom">
+                        <a class="button btn hidden" href="#" class="img" onclick="HideImage()"> Github</a>
                     </div>
                 </div>
                 <!--RightSide-->
-                <div class="flex flex-col w-1/2">
-                    <img class="" src="Images/LindoR.png" width="700px" height="700px" alt="">
+                <div class="flex flex-col w-1/2 relative">
+                    <img id="image" class="img hover:scale-105 hover:rotate-3 transition-all duration-700 ease-in-out" src="Images/LindoR.png" width="700px" height="700px" alt="">
+                    <div class="hidden hover:scale-150 lg:block rounded-full w-full h-auto aspect-square bg-gradient-to-l from-indigo-500 to-slate-300 absolute -z-10"></div>
                 </div>
             </div>
         </header>
@@ -111,4 +121,6 @@
             <p class="text-sm py-3">@2024 Made by Lindokuhle Duma</p>
         </div>
     </footer>
+
+    <script type="text/javascript" src="Javascript/index.js"></script>
 </html>
