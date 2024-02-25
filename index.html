@@ -7,6 +7,9 @@
         <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" type="text/css" href="Css/index.css" />
+
+        <!-- Devicon programming icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +18,23 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
-    <body>
-        <header id="header">
+    <body class="text-slate-800">
+        <header id="header" class="">
             <!--Navigation Bar-->
             <nav class="bg-transparent">
                 <div class="mx-auto px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
-                            <div class="flex flex-1 sm:items-stretch md:items-center justify-between ">
-                                <div><h1 class="text-md font-bold font-sans uppercase  hover:text-blue-600 rounded-full px-3 py-2 text-sm transition-all duration-500 ease-in-out">Lindokuhle.Dev</Lindokuhle></h1></div>
-                                <ul id="navlist" class="hidden md:flex flex-col sm:hidden md:flex-row space-x-10 justify-self-center">
-                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#home">Home</a></li>
-                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#projects">Projects</a></li>
-                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#skills">Skills</a></li>
-                                    <li><a class="text-gray-900 hover:text-blue-600 rounded-full px-3 py-2 text-sm font-medium transition-all duration-500 ease-in-out uppercase" href="#contact">Contact</a></li>
+                            <div class="flex flex-1 sm:items-stretch md:items-center">
+                                <div><h1 class="text-md font-bold font-sans uppercase justify-self-start text-blue-700 hover:text-blue-400 rounded-full px-3 py-2 text-sm transition-all duration-500 ease-in-out">Lindokuhle</Lindokuhle></h1></div>
+                                <ul id="navlist" class="hidden md:flex flex-col sm:hidden md:flex-row space-x-10 justify-self-center mr-0 ml-auto -translate-x-7">
+                                    <li><a class="text-blue-700 hover:text-blue-400 rounded-full px-3 py-2 text-base font-normal transition-all duration-500 ease-in-out" href="#home">Home</a></li>
+                                    <li><a class="text-blue-700 hover:text-blue-400 rounded-full px-3 py-2 text-base font-normal transition-all duration-500 ease-in-out" href="#projects">Projects</a></li>
+                                    <li><a class="text-blue-700 hover:text-blue-400 rounded-full px-3 py-2 text-base font-normal transition-all duration-500 ease-in-out" href="#skills">Skills</a></li>
+                                    <li><a class="text-blue-700 hover:text-blue-400 rounded-full px-3 py-2 text-base font-normal transition-all duration-500 ease-in-out" href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                     </div>
@@ -36,68 +42,260 @@
             </nav>
             
             <!--Hero Section-->
-            <div class="container flex flex-col-reverse md:flex-row items-center h-auto my-28 mx-auto">
+            <div class="container flex flex-col-reverse md:flex-row items-center h-[Calc(100vh_-_64px)] mx-auto">
                 <!--LeftSide-->
-                <div class="flex flex-col w-1/2">
-                    <h1 class="text-5xl text-blue-600 font-bold mb-3 font-NotoSans">Hello, my name is Lindokuhle</h1>
-                    <h2 class="text-6xl ">I am a Software Engineer</h2>
-                    <div class="flex flex-col md:flex-col mt-auto align-bottom">
-                        <a class="button btn hidden" href="#" class="img" onclick="HideImage()"> Github</a>
+                <div class="flex flex-1 flex-col w-1/2 h-full justify-center relative">
+                    <h1 class="text-5xl capitalize text-blue-950 font-extrabold mb-3 font-NotoSans ">Hello, i am <span class="text-blue-600">Lindokuhle Duma</span></h1>
+                    <h2 class="text-4xl uppercase mb-10">I am a <span class="text-slate-500">Software Engineer</span></h2>
+                    <div class="flex flex-row md:flex-row space-x-3 w-full justify-start justify-self-center ">
+                        <a class="button btn" href="https://www.linkedin.com/in/lindokuhle-duma-00097b19b" target="_blank">
+                            <i class="bi bi-linkedin text-[#0077b5] text-4xl"></i>
+                        </a>
+                        <a class="button btn" href="https://github.com/LindoDuma" target="_blank">
+                            <i class="bi bi-github text-black text-4xl"></i>
+                        </a>
                     </div>
                 </div>
                 <!--RightSide-->
                 <div class="flex flex-col w-1/2 relative">
-                    <img id="image" class="img hover:scale-105 hover:rotate-3 transition-all duration-700 ease-in-out" src="Images/LindoR.png" width="700px" height="700px" alt="">
-                    <div class="hidden hover:scale-150 lg:block rounded-full w-full h-auto aspect-square bg-gradient-to-l from-indigo-500 to-slate-300 absolute -z-10"></div>
+                    <img id="image" class="img relative w-3/4 h-3/4 self-center justify-self-center hover:scale-105 hover:rotate-3 transition-all duration-700 ease-in-out" src="Images/LindoR.png" width="500px" height="500px" alt="">
+                    <div class="hidden hover:scale-150 lg:block rounded-full w-auto h-full left-1/2 -translate-x-1/2 aspect-square bg-gradient-to-tl from-indigo-500 to-sky-300 absolute -z-10"></div>
                 </div>
             </div>
         </header>
 
         <!--Skills-->
-        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="skills">
+        <div class="container flex flex-col justify-center align-middle items-center h-auto my-44 mx-auto" id="skills">
+            <!-- Skills heading -->
             <div class="flex flex-col w-full justify-center items-center">
-                <h1 class="text-5xl font-bold mb-20">Skills</h1>
+                <h1 class="text-5xl font-bold mb-5 text-blue-500">Skills</h1>
+                <h2 class="text-2xl font-bold mb-10 text-blue-950 uppercase">What i can work with</h2>
             </div>
-            <div class="flex justify-center w-full flex-col md:flex-row gap-9">
+
+            <div class="flex justify-center items-center w-full flex-col md:flex-row gap-0">
+                <!-- Leftside || Languages -->
                 <div class="flex flex-col w-1/2 p-5">
-                    <h1 class="text-4xl font-normal mb-3">Languages</h1>
-                    <div class="flex flex-col">
-                        <h1>C#</h1>
-                        <h1>HTML</h1>
-                        <h1>CSS</h1>
-                        <h1>Java</h1>
-                        <h1>Javascript</h1>
+                    <h1 class="text-2xl font-normal mb-6 text-center uppercase hidden">Languages</h1>
+                    <div class="grid grid-cols-4 gap-4">
+                        <!--Labels and Icons -->
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-csharp-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">C-Sharp</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-javascript-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Javascript</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-html5-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">HTML</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-css3-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">CSS</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-java-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Java</h1>
+                        </div>
+                        <!-- More Skills maybe -->
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-dot-net-plain-wordmark colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Asp.Net MVC</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-dotnetcore-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Asp.Net Core</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-bootstrap-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Bootstrap</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-tailwindcss-original colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Tailwind CSS</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-git-plain colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Git</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-slate-100 p-3 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 ">
+                            <i class="devicon-github-original colored text-4xl"></i>
+                            <h1 class="text-xl text-slate-600">Github</h1>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex flex-col w-1/2 p-5">
-                    <h1 class="text-4xl font-normal mb-3">Frameworks and tools</h1>
-                    <div class="flex flex-col">
-                        <h1>ASP.NET MVC</h1>
-                        <h1>ASP.NET Core</h1>
-                        <h1>Github</h1>
-                        <h1>Visual Studio</h1>
-                        <h1>Visual Studio Code</h1>
+                <!-- Rightside || Frameworks and tools-->
+                <div class="hidden flex-col w-1/2 p-5">
+                    <h1 class="text-2xl font-normal mb-6 text-center uppercase">Frameworks and tools</h1>
+                    <div class="grid grid-cols-4 gap-4">
+                        <!-- Labels and Icons -->
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-indigo-200 p-3 w-full h-auto aspect-square">
+                            <i class="devicon-dot-net-plain-wordmark colored text-3xl"></i>
+                            <h1 class="text-xl">Asp.Net MVC</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-indigo-200 p-3 w-full h-auto aspect-square">
+                            <i class="devicon-dotnetcore-plain colored text-3xl"></i>
+                            <h1 class="text-xl">Asp.Net Core</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-indigo-200 p-3 w-full h-auto aspect-square">
+                            <i class="devicon-bootstrap-plain colored text-3xl"></i>
+                            <h1 class="text-xl">Bootstrap</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-indigo-200 p-3 w-full h-auto aspect-square">
+                            <i class="devicon-tailwindcss-original colored text-3xl"></i>
+                            <h1 class="text-xl">Tailwind CSS</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-indigo-200 p-3 w-full h-auto aspect-square">
+                            <i class="devicon-git-plain colored text-3xl"></i>
+                            <h1 class="text-xl">Git</h1>
+                        </div>
+                        <div class="flex flex-col justify-center items-center gap-2 rounded-xl bg-indigo-200 p-3 w-full h-auto aspect-square">
+                            <i class="devicon-github-original colored text-3xl"></i>
+                            <h1 class="text-xl">Github</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!--Projects-->
-        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="projects">
+        <div class="container flex flex-col justify-center align-middle items-center h-auto mb-40 mx-auto" id="projects">
             <div class="flex flex-col w-full justify-center items-center">
-                <h1 class="text-5xl font-bold mb-20">Projects</h1>
+                <h1 class="text-5xl font-bold mb-5 text-blue-500">Projects</h1>
+                <h2 class="text-2xl font-bold mb-10 text-blue-950 uppercase">What i have been doing</h2>
             </div>
-            <div class="flex justify-center w-full flex-col md:flex-row gap-9">
-                <div class="flex flex-col w-full p-5">
-                    <h1 class="text-3xl font-normal mb-3">BSLP Web App</h1>
-                    <h1 class="text-2xl font-normal mb-3"> Built with:</h1>
-                    <div class="flex flex-col">
-                        <p>ASP.NET MCV 5</p>
-                        <p>Bootstrap 5</p>
-                        <p>CSS</p>
-                        <p>Razor</p>
-                        <p>Javascript</p>
+            <!-- List Flexbox -->
+            <div class="flex justify-center items-center w-full flex-col md:flex-col gap-14">
+                <!-- Project 1 -->
+                <div class="flex flex-col lg:flex-row w-full lg:w-3/4 h-[720px] lg:h-96 rounded-3xl overflow-hidden">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full h-full object-cover" src="Images/Port1.jpeg"/>
+                    </div>
+                    <div class="flex flex-col bg-gradient-to-tr from-indigo-300 to-sky-300 w-full p-4 relative">
+                        <h1 class="text-2xl font-normal mb-3">BSLP Web App</h1>
+                        <div class="flex flex-col w-full bg-gradient-to-bl from-slate-400 to-slate-500 p-4 rounded-lg lg:-left-8 mt-9 static lg:absolute">
+                            <p class="text-xl text-white">A web application for BSLP Carpentry, has a landing page. the website is for having a all projects from the past listed as well as their images stored the Cloudinary API in the backend. Potential customers can also view a gallery that uses the same images that are uploaded by the Admin.</p>
+                        </div>
+                        <div class="flex flex-row flex-wrap space-x-2 gap-2 mt-3 lg:mt-auto">
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Asp.Net</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Bootstrap</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Javascript</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Css</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row w-full lg:w-3/4 h-[720px] lg:h-96 rounded-3xl overflow-hidden">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full h-full object-cover" src="Images/Port1.jpeg"/>
+                    </div>
+                    <div class="flex flex-col bg-gradient-to-tr from-indigo-300 to-sky-300 w-full p-4 relative">
+                        <h1 class="text-2xl font-normal mb-3">BSLP Web App</h1>
+                        <div class="flex flex-col w-full bg-gradient-to-bl from-slate-400 to-slate-500 p-4 rounded-lg lg:-left-8 mt-9 static lg:absolute">
+                            <p class="text-xl text-white">A web application for BSLP Carpentry, has a landing page. the website is for having a all projects from the past listed as well as their images stored the Cloudinary API in the backend. Potential customers can also view a gallery that uses the same images that are uploaded by the Admin.</p>
+                        </div>
+                        <div class="flex flex-row flex-wrap space-x-2 gap-2 mt-3 lg:mt-auto">
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Asp.Net</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Bootstrap</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Javascript</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Css</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row w-full lg:w-3/4 h-[720px] lg:h-96 rounded-3xl overflow-hidden">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full h-full object-cover" src="Images/Port1.jpeg"/>
+                    </div>
+                    <div class="flex flex-col bg-gradient-to-tr from-indigo-300 to-sky-300 w-full p-4 relative">
+                        <h1 class="text-2xl font-normal mb-3">BSLP Web App</h1>
+                        <div class="flex flex-col w-full bg-gradient-to-bl from-slate-400 to-slate-500 p-4 rounded-lg lg:-left-8 mt-9 static lg:absolute">
+                            <p class="text-xl text-white">A web application for BSLP Carpentry, has a landing page. the website is for having a all projects from the past listed as well as their images stored the Cloudinary API in the backend. Potential customers can also view a gallery that uses the same images that are uploaded by the Admin.</p>
+                        </div>
+                        <div class="flex flex-row flex-wrap space-x-2 gap-2 mt-3 lg:mt-auto">
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Asp.Net</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Bootstrap</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Javascript</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Css</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row w-full lg:w-3/4 h-[720px] lg:h-96 rounded-3xl overflow-hidden">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full h-full object-cover" src="Images/Port1.jpeg"/>
+                    </div>
+                    <div class="flex flex-col bg-gradient-to-tr from-indigo-300 to-sky-300 w-full p-4 relative">
+                        <h1 class="text-2xl font-normal mb-3">BSLP Web App</h1>
+                        <div class="flex flex-col w-full bg-gradient-to-bl from-slate-400 to-slate-500 p-4 rounded-lg lg:-left-8 mt-9 static lg:absolute">
+                            <p class="text-xl text-white">A web application for BSLP Carpentry, has a landing page. the website is for having a all projects from the past listed as well as their images stored the Cloudinary API in the backend. Potential customers can also view a gallery that uses the same images that are uploaded by the Admin.</p>
+                        </div>
+                        <div class="flex flex-row flex-wrap space-x-2 gap-2 mt-3 lg:mt-auto">
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Asp.Net</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Bootstrap</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Javascript</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Css</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row w-full lg:w-3/4 h-[720px] lg:h-96 rounded-3xl overflow-hidden">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full h-full object-cover" src="Images/Port1.jpeg"/>
+                    </div>
+                    <div class="flex flex-col bg-gradient-to-tr from-indigo-300 to-sky-300 w-full p-4 relative">
+                        <h1 class="text-2xl font-normal mb-3">BSLP Web App</h1>
+                        <div class="flex flex-col w-full bg-gradient-to-bl from-slate-400 to-slate-500 p-4 rounded-lg lg:-left-8 mt-9 static lg:absolute">
+                            <p class="text-xl text-white">A web application for BSLP Carpentry, has a landing page. the website is for having a all projects from the past listed as well as their images stored the Cloudinary API in the backend. Potential customers can also view a gallery that uses the same images that are uploaded by the Admin.</p>
+                        </div>
+                        <div class="flex flex-row flex-wrap space-x-2 gap-2 mt-3 lg:mt-auto">
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Asp.Net</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Bootstrap</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Javascript</p>
+                            </div>
+                            <div class="p-2 bg-slate-700 text-[ghostwhite] rounded-full h-auto">
+                                <p class="text-sm px-2">Css</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,20 +304,27 @@
         <!--Contact-->
         <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="contact">
             <div class="flex flex-col w-full justify-center items-center">
-                <h1 class="text-5xl font-bold mb-20">Contact Me</h1>
+                <h1 class="text-5xl font-bold mb-5 text-blue-500">Contact</h1>
+                <h2 class="text-2xl font-bold mb-10 text-blue-950 uppercase">get in touch with me</h2>
             </div>
-            <div class="flex justify-center w-full flex-col md:flex-row gap-9">
-                <div class="flex flex-col w-full p-5">
-                    <p class="text font-normal mb-3">Tel: 0727500762</p>
-                    <p class="text font-normal mb-3">Email: lindoduma10@gmail.com</p>
+            <div class="flex justify-center items-center w-full flex-col md:flex-row gap-9">
+                <div class="flex flex-col justify-center w-1/3 p-5">
+                    <a class="">
+                        <p class="text font-normal mb-3">Tel: 0727500762</p>
+                    </a>
+                    <a class="">
+                        <p class="text font-normal mb-3">Email: lindoduma10@gmail.com</p>
+                    </a>
                 </div>
             </div>
         </div>
     </body>
     <footer>
         <div class="w-full flex flex-row justify-center items-center">
-            <p class="text-sm py-3">@2024 Made by Lindokuhle Duma</p>
+            <p class="text-sm py-3">Made by Lindokuhle Duma</p>
         </div>
+        Photo by <a href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> on <a href="https://unsplash.com/photos/an-abstract-white-background-with-a-curved-curve-Slf8QxaFIWw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
     </footer>
 
     <script type="text/javascript" src="Javascript/index.js"></script>
