@@ -3,7 +3,7 @@ module.exports = {   content: ['./src/**/*.{html,js}'],   theme: {
       fontFamily: {
         NotoSans: ["Noto Sans", "san-serif"],
         Roboto: ["Roboto", "san-serif"],
-        //More Fonts Later
+        Poppins: ["Poppins", "san-serif"]
       },
       colors:{
         "primary-color":"#00FF00",
@@ -12,7 +12,8 @@ module.exports = {   content: ['./src/**/*.{html,js}'],   theme: {
         "quartiary-color":"#00FF00"
       },
       screens:{
-        "sm":"480px"
+        "sm":"480px",
+        "xl":"1440px"
       }
     },
   }, };

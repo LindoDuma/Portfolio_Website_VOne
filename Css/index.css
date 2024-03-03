@@ -10,11 +10,20 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
+.brand img{
+    /*color: red;*/
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Noto Sans', sans-serif;
 }
 
+.logo h1{
+    font-family: "Poppins", sans-serif !important;
+}
+
 #navlist a {
-    font-family: "Roboto", sans-serif;
+    /*font-family: "Roboto", sans-serif;*/
+    font-family: "Poppins", sans-serif;
 }
 
