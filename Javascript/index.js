@@ -15,18 +15,18 @@ function Close(){
 
 const OpenProjectDetails = (currentProject) => {
     
-    currentProject.children[1].classList.remove('h-0');
-    currentProject.children[1].classList.add('h-full');
+    currentProject.children[1].classList.remove('md:h-0');
+    currentProject.children[1].classList.add('md:h-full');
 
-    currentProject.children[1].classList.add('top-0');
-    currentProject.children[1].classList.remove('-top-40');
+    currentProject.children[1].classList.add('md:top-0');
+    currentProject.children[1].classList.remove('md:-top-40');
 }
 
 const CloseProjectDetails = (currentProject) => {
 
-    currentProject.children[1].classList.remove('h-full');
-    currentProject.children[1].classList.add('h-0');
+    currentProject.children[1].classList.remove('md:h-full');
+    currentProject.children[1].classList.add('md:h-0');
 
-    currentProject.children[1].classList.add('-top-40');
-    currentProject.children[1].classList.remove('top-0');
+    currentProject.children[1].classList.add('md:-top-40');
+    currentProject.children[1].classList.remove('md:top-0');
 }
