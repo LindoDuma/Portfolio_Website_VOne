@@ -55,9 +55,9 @@
             <div class="container flex flex-col-reverse md:flex-row items-center h-fit lg:h-[Calc(100vh_-_64px)] mx-auto relative">
                 <!--LeftSide-->
                 <div class="flex flex-1 flex-col w-full lg:w-1/2 h-full justify-center p-4 lg:p-4 relative">
-                    <h1 class="text-4xl md:text-6xl text-center md:text-start capitalize text-blue-950 font-black mb-3 font-NotoSans ">Hello, i am <span class="text-blue-600">Lindokuhle</span></h1>
-                    <h2 class="text-2xl md:text-4xl text-center md:text-start uppercase mb-10 font-Poppins">I am a <span class="text-slate-500">Software Engineer</span></h2>
-                    <div class="flex flex-row md:flex-row space-x-3 w-full justify-center md:justify-start justify-self-center ">
+                    <h1 class="text-4xl md:text-6xl text-center md:text-start capitalize text-blue-950 font-black mb-3 font-NotoSans hide">Hello, i am <span class="text-blue-600">Lindokuhle</span></h1>
+                    <h2 class="text-2xl md:text-4xl text-center md:text-start uppercase mb-10 font-Poppins hide">I am a <span class="text-slate-500">Software Engineer</span></h2>
+                    <div class="flex flex-row md:flex-row space-x-3 w-full justify-center md:justify-start justify-self-center hide">
                         <a class="button btn transition-all ease-in-out duration-200" href="https://www.linkedin.com/in/lindokuhle-duma-00097b19b" target="_blank">
                             <i class="bi bi-linkedin text-black text-4xl"></i>
                         </a>
@@ -68,11 +68,12 @@
                 </div>
                 <!--RightSide-->
                 <div class="flex flex-col w-full lg:w-1/2 relative">
-                    <img id="image" class="img relative w-11/12 lg:w-3/4 h-auto aspect-square self-center justify-self-center hover:scale-105 hover:rotate-3 transition-all duration-700 ease-in-out" src="Images/LindoR.png" width="500px" height="500px" alt="">
-                    <div class="animate-pulse hidden rounded-full lg:block w-auto h-full left-1/2 -translate-x-1/2 aspect-square bg-gradient-to-tl from-indigo-400 to-purple-500 absolute -z-10"></div>
+                    <img id="image" class="img relative w-11/12 lg:w-3/4 h-auto aspect-square self-center justify-self-center hover:scale-105 hover:rotate-3 transition-all duration-700 ease-in-out hide-right" src="Images/LindoR.png" width="500px" height="500px" alt="">
+                    <div class=" hidden rounded-full lg:block w-auto h-full left-1/2 -translate-x-1/2 aspect-square bg-gradient-to-tl from-indigo-400 to-purple-500 absolute -z-10 hide-right"></div>
                 </div>
-                <a class="hidden md:block" href="#skills">
-                    <i class="bi bi-arrow-down-short absolute bottom-0 left-1/2 mb-2 text-5xl text-blue-500 animate-bounce "></i>
+                <!--DownArrow-->
+                <a class="hidden md:block left-1/2 absolute bottom-0 animate-bounce" href="#skills">
+                    <i class="bi bi-arrow-down-short mb-2 text-5xl text-blue-500"></i>
                 </a>
             </div>
         </header>
@@ -80,7 +81,7 @@
         <!--Skills-->
         <div class="container flex flex-col justify-center align-middle items-center h-auto my-44 mx-auto" id="skills">
             <!-- Skills heading -->
-            <div class="flex flex-col w-full justify-center items-center">
+            <div class="flex flex-col w-full justify-center items-center hide-fade">
                 <h1 class="text-5xl font-bold mb-5 text-blue-500">Skills</h1>
                 <h2 class="text-2xl font-bold mb-10 text-blue-950 uppercase">What i can work with</h2>
             </div>
@@ -88,8 +89,8 @@
             <div class="flex justify-center items-center w-full flex-col lg:flex-row gap-0">
                 <!-- Leftside || Languages -->
                 <div class="flex flex-col w-full lg:w-1/2 xl:w-2/5 p-5">
-                    <h1 class="text-2xl font-normal mb-6 text-start ">Languages</h1>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <h1 class="text-2xl font-normal mb-6 text-start hide">Languages</h1>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 hide">
                         <!--Skill Labels and Icons -->
                         <div class="flex flex-col justify-center items-center gap-2 rounded-2xl bg-slate-100 p-2 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 border border-indigo-200">
                             <i class="devicon-csharp-plain colored text-4xl"></i>
@@ -121,8 +122,8 @@
 
                 <!-- Rightside || Frameworks and tools-->
                 <div class="flex flex-col w-full lg:w-1/2 xl:w-2/5 p-5">
-                    <h1 class="text-2xl font-normal mb-6 text-start ">Frameworks And Tools</h1>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <h1 class="text-2xl font-normal mb-6 text-start hide-right">Frameworks And Tools</h1>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 hide-right">
                         <!-- Skill Labels and Icons -->
                         <div class="flex flex-col justify-center items-center gap-2 rounded-2xl bg-slate-100 p-2 w-full h-auto aspect-square transition-all hover:bg-indigo-200 duration-500 hover:scale-110 border border-indigo-200">
                             <i class="devicon-dot-net-plain-wordmark colored text-4xl"></i>
@@ -163,14 +164,14 @@
 
         <!--Projects-->
         <div class="container flex flex-col justify-center align-middle items-center h-auto mb-40 mx-auto" id="projects">
-            <div class="flex flex-col w-full justify-center items-center">
+            <div class="flex flex-col w-full justify-center items-center hide-fade">
                 <h1 class="text-5xl font-bold mb-5 text-blue-500">Projects</h1>
                 <h2 class="text-2xl font-bold mb-10 text-blue-950 uppercase">What i have been doing</h2>
             </div>
             <!-- List Flexbox -->
             <div class="flex flex-col md:flex-row flex-wrap col-span-2 p-3 md:p-0 justify-center items-center w-full gap-5 md:gap-10">
                 <!-- Project 1 -->
-                <div class="flex flex-col w-full lg:w-2/5 h-96 lg:h-96 rounded-3xl overflow-hidden relative border border-indigo-200" id="project" onmouseover="OpenProjectDetails(this)" onmouseleave="CloseProjectDetails(this)">
+                <div class="flex flex-col w-full lg:w-2/5 h-96 lg:h-96 rounded-3xl overflow-hidden relative border border-indigo-200 hide" id="project" onmouseover="OpenProjectDetails(this)" onmouseleave="CloseProjectDetails(this)">
                     <!-- Project image in the background -->
                     <div class="flex flex-col w-full h-full">
                         <img class="w-auto aspect-auto h-full object-cover" src="Images/Port1.jpeg"/>
@@ -203,7 +204,7 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="flex flex-col w-full lg:w-2/5 h-96 lg:h-96 rounded-3xl overflow-hidden relative border border-indigo-200" id="project" onmouseover="OpenProjectDetails(this)" onmouseleave="CloseProjectDetails(this)">
+                <div class="flex flex-col w-full lg:w-2/5 h-96 lg:h-96 rounded-3xl overflow-hidden relative border border-indigo-200 hide-right" id="project" onmouseover="OpenProjectDetails(this)" onmouseleave="CloseProjectDetails(this)">
                     <!-- Project image in the background -->
                     <div class="flex flex-col w-full h-full">
                         <img class="w-auto aspect-auto h-full object-cover" src="Images/Port2.jpeg"/>
@@ -236,7 +237,7 @@
         </div>
 
         <!--Contact-->
-        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto" id="contact">
+        <div class="container flex flex-col justify-center align-middle items-center h-auto my-8 mx-auto hide-fade" id="contact">
             <div class="flex flex-col w-full justify-center items-center">
                 <h1 class="text-5xl font-bold mb-5 text-blue-500">Contact</h1>
                 <h2 class="text-2xl font-bold mb-10 text-blue-950 uppercase">get in touch with me</h2>
